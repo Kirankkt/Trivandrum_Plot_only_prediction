@@ -4,7 +4,7 @@ import joblib  # For saving and loading the model
 from sklearn.pipeline import Pipeline
 
 # Load the dataset
-@st.cache
+@st.cache_data
 def load_data():
     return pd.read_csv('standardized_locations_dataset.csv')
 
